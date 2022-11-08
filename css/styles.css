@@ -141,14 +141,15 @@ li {
   transition-duration: 250ms;
 }
 
-.email-adress-position li:hover {
+.email-adress-position li:hover .header-svg {
   fill: var(--primary-color);
   cursor: pointer;
 }
 .email-adress-position li:hover a {
   color: var(--primary-color);
 }
-.header-svg{
+
+.header-svg {
   fill: var(--contacts-color);
   transition-property: fill;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
@@ -156,11 +157,9 @@ li {
 }
 .header-svg:hover {
   --contacts-color: var(--primary-color);
-
 }
-.header-svg:hover .email-adress-position{
+.header-svg:hover .email-adress-position {
   --contacts-color: var(--primary-color);
-
 }
 .email-adress-position li {
   display: flex;
